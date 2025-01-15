@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.buttons a {
+    width: 30px;
+    height: 8px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 0px 5px;
+    border-radius: 10px;
+}
+a.active{
+    transition: .5s;
+    transform: 0.999;
+    background-color: white;
+    animation: animate 0.4s;
+}
+@keyframes animate {
+    to{
+        transform: scale(0.8);
+    }
+}
